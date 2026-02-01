@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Annu • Stay Blessed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --deep-purple: #4b0082;
+            --accent-pink: #ff6b6b;
+            --glass: rgba(255, 255, 255, 0.95);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            color: #333;
+            line-height: 1.6;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 480px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--deep-purple) 0%, #1a1a2e 100%);
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        header h1 { 
+            font-family: 'Great Vibes', cursive; 
+            font-size: 3.2rem; 
+            margin: 0; 
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .spiritual-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 25px;
+            margin: -40px 10px 30px 10px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+
+        .img-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .img-grid img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 4px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 30px;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 20px;
+            background: #000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .controls {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, var(--gold), #f3e5ab);
+            color: #4b0082;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn:active { transform: scale(0.95); }
+
+        .reveal-container {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .heart-btn {
+            background: var(--accent-pink);
+            color: white;
+            font-size: 1.1rem;
+            padding: 18px 45px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+            animation: pulse 2s infinite;
+            font-weight: 600;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4); }
+            50% { transform: scale(1.05); box-shadow: 0 12px 35px rgba(255, 107, 107, 0.6); }
+            100% { transform: scale(1); box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4); }
+        }
+
+        #special-message {
+            display: none;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 30px;
+            border-radius: 30px;
+            margin-top: 25px;
+            text-align: left;
+            line-height: 1.8;
+            font-size: 1rem;
+            border-left: 6px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: slideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.85rem;
+            background: #f1f1f1;
+            margin-top: 40px;
+        }
+
+        .waheguru-text {
+            color: var(--deep-purple);
+            font-weight: 600;
+            font-style: italic;
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p style="margin:0; letter-spacing: 3px; font-size: 0.75rem; opacity: 0.8; font-weight: 600;">PRAYERS FOR YOU</p>
+    <h1>Stay Blessed</h1>
+    <p>Health • Happiness • Peace</p>
+</header>
+
+<div class="container">
+    
+    <div class="spiritual-card">
+        <div class="img-grid">
+            <img src="Gurbani Quotes.jpg" alt="Waheguru Ji 1">
+            <img src="jii.jpg" alt="Waheguru Ji 2">
+        </div>
+        <span class="waheguru-text">"Nanak Naam Chardi Kala, Tere Bhane Sarbat Da Bhala"</span>
+        <p style="font-size: 0.9rem; margin-top: 10px; color: #555;">
+            Waheguru Ji se yahi prarthana hai ki aap hamesha tandurust raho aur muskurati raho.
+        </p>
+    </div>
+
+    <div class="video-card">
+        <video id="vid1" playsinline>
+            <source src="waheguru.mp4" type="video/mp4">
+            Your browser doesn't support video.
+        </video>
+        <div class="controls">
+            <button class="btn" onclick="document.getElementById('vid1').play()">▶ Play Video 1</button>
+            <button class="btn" style="background: #eee; color: #444;" onclick="document.getElementById('vid1').pause()">Pause</button>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <video id="vid2" playsinline>
+            <source src="whae2.mp4" type="video/mp4">
+            Your browser doesn't support video.
+        </video>
+        <div class="controls">
+            <button class="btn" onclick="document.getElementById('vid2').play()">▶ Play Video 2</button>
+            <button class="btn" style="background: #eee; color: #444;" onclick="document.getElementById('vid2').pause()">Pause</button>
+        </div>
+    </div>
+
+    <div class="reveal-container">
+        <button class="heart-btn" onclick="revealMessage()">Click for a Special Message ❤️</button>
+        
+        <div id="special-message">
+            <p style="margin:0;">
+                <span style="color: var(--gold); font-weight: 600;">Waheguru ji,</span><br>
+                Mere dost ko hamesha sehat, sukoon aur himmat dena. Uske dil ki tension halka karna aur uske raaste asaan karna.
+                <br><br>
+                Wherever life feels heavy, please wrap my friend in Your peace and protection. May calm replace worry, and hope replace fear.
+                <br><br>
+                <i style="font-size: 0.9rem; opacity: 0.8;">Bss aapun wish tu happy r hmesh.</i>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    Duaon mein yaad rakhna.<br>
+    Created by tuggu
+</div>
+
+<script>
+    function revealMessage() {
+        var x = document.getElementById("special-message");
+        var btn = document.querySelector(".heart-btn");
+        
+        // This check works perfectly on both Laptop (Edge/Chrome) and Android
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+            btn.innerHTML = "Close Message";
+            btn.style.animation = "none";
+            btn.style.background = "#444";
+        } else {
+            x.style.display = "none";
+            btn.innerHTML = "Click for a Special Message ❤️";
+            btn.style.animation = "pulse 2s infinite";
+            btn.style.background = "var(--accent-pink)";
+        }
+    }
+</script>
+
+</body>
+</html>
